@@ -1,0 +1,61 @@
+## From https://jasonstitt.com/gitignore-whitelisting-patterns
+
+# 1. Ignore everything
+*
+
+# 2. But descend into directories
+!*/
+
+# 3. Allow specific files and file extensions
+!.gitignore
+!*.md
+!*.tf
+!*.yaml
+!*.yml
+!*.ico
+!*.svg
+!*.css
+!*.css.map
+!*.js
+!*.js.map
+!*.html
+!*.txt
+!*.json
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.webp
+
+# Next.js specific files
+!*.ts
+!*.tsx
+!*.jsx
+!*.mjs
+!*.cjs
+!next.config.*
+!.eslintrc.*
+!.prettierrc.*
+!.env.example
+!tsconfig.json
+!package.json
+!package-lock.json
+!yarn.lock
+!.nvmrc
+
+# 4. Block specific directories and files
+*.git
+**/.terraform*
+**/*env
+**/TMP
+.next/
+node_modules/
+.vercel/
+.env*.local
+*.log
+.DS_Store
+coverage/
+.turbo
+build/
+dist/
+out/
